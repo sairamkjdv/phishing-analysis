@@ -1,25 +1,24 @@
-# 🛡️ Cybersecurity Internship Task 2 – Phishing Email Analysis
+# Task 2 – Phishing Email Analysis
 
-**👨‍💻 Intern:** Koyyana Jai Durga Venkata Sai Ram  
-**📅 Task:** 2 – Analyze a Phishing Email Sample  
-**🏢 Internship:** Elevate Labs – Cybersecurity
+## Objective 
+To analyze a Phishing Email Sample
 
 ---
 
-## 📧 Sample Phishing Email Used
+## Sample Phishing Email Used
 Content extracted from a publicly available PayPal-themed phishing attempt (included in `phishing-email.txt`).
 
 ---
 
-## 🔍 Phishing Indicators (Based on Hints/Mini Guide)
+## Phishing Indicators
 
 ### 1. Sample Email
-✔️ Realistic phishing email used targeting PayPal users.
+Realistic phishing email used targeting PayPal users.
 
 ### 2. Spoofed Sender Address
 - **Email**: `services@paypal-accounts.com`
 - **Actual PayPal Domain**: `paypal.com`
-- 🛑 The domain is spoofed using a lookalike pattern.
+- The domain is spoofed using a lookalike pattern.
 
 ### 3. Email Header Analysis (Customized Simulation)
 The email header was customized to simulate delivery to `alex@flux.com` to create a realistic phishing analysis scenario. Below are the simulated header results:
@@ -37,7 +36,7 @@ Authentication-Results: mail.example.com;
         dmarc=fail header.from=paypal-accounts.com
 ```
 
-✔️ SPF, DKIM, and DMARC validation failed, indicating a spoofed and unauthenticated sender.
+SPF, DKIM, and DMARC validation failed, indicating a spoofed and unauthenticated sender.
 
 ### 4. Suspicious Links or Attachments
 - Button: **Confirm Your Information**
@@ -55,35 +54,28 @@ Authentication-Results: mail.example.com;
 
 ### 8. Summary of Phishing Traits
 
-| Indicator                     | Present | Notes |
-|------------------------------|---------|-------|
-| Spoofed sender               | ✅ Yes  | Fake domain |
-| Email header issues          | ✅ Yes  | SPF/DKIM fail |
-| Suspicious links             | ✅ Yes  | Button present |
-| Urgent language              | ✅ Yes  | Fear-based tactics |
-| Mismatched URLs              | ✅ Yes  | Link likely masked |
-| Spelling/grammar issues      | ✅ Minor | Some awkward phrasing |
-| Social engineering tactics   | ✅ Yes  | Uses fear & urgency |
+| Indicator                     | Present | Notes                 |
+|-------------------------------|---------|-----------------------|
+| Spoofed sender                | Yes     | Fake domain           |
+| Email header issues           | Yes     | SPF/DKIM fail         |
+| Suspicious links              | Yes     | Button present        |
+| Urgent language               | Yes     | Fear-based tactics    |
+| Mismatched URLs               | Yes     | Link likely masked    |
+| Spelling/grammar issues       | Minor   | Some awkward phrasing |
+| Social engineering tactics    | Yes     | Uses fear & urgency   |
 
 ---
 
-## 🛠 Tools Suggested
-- [Google Header Analyzer](https://toolbox.googleapps.com/apps/messageheader/)
-- [VirusTotal](https://www.virustotal.com/)
-- [URLVoid](https://www.urlvoid.com/)
+## Tools Suggested
+- [Google Header Analyzer](https://toolbox.googleapps.com/apps/messageheader/): for .eml files
+- [VirusTotal](https://www.virustotal.com/): Check link safety
+- [URLVoid](https://www.urlvoid.com/): Investigate domain reputation
 
 ---
 
-## 📂 Repository Structure
-
-```
-📁 elevate-task2-phishing-analysis
-├── README.md
-├── phishing-email.txt
-├── simulated-email-header.txt
-```
-
----
-
-## ✅ Outcome
+## Learning Outcome
 Learned to analyze phishing emails by identifying spoofing, social engineering, and technical red flags using both visual inspection and header analysis techniques.
+
+---
+
+> Task completed as part of Elevate Labs Cyber Security Internship Program.
