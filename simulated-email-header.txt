@@ -1,0 +1,10 @@
+Delivered-To: alex@flux.com
+Return-Path: <services@paypal-accounts.com>
+Received: from phishing-mailer.fakehost.ru ([198.51.100.23])
+        by mail.example.com with ESMTP id 9sdf9sd8f7sdf
+        for <alex@flux.com>; Tue, 04 Aug 2025 11:15:00 +0530
+Received-SPF: fail (example.com: domain of services@paypal-accounts.com does not designate 198.51.100.23 as permitted sender) client-ip=198.51.100.23;
+Authentication-Results: mail.example.com;
+        spf=fail smtp.mailfrom=services@paypal-accounts.com;
+        dkim=fail header.d=paypal-accounts.com;
+        dmarc=fail header.from=paypal-accounts.com
